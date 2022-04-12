@@ -1,0 +1,365 @@
+@import 'reset'
+
+
+$color-grey: #5e616c
+$light-grey: #959494
+$user-bg: #b9d0dd
+$subtitles-color: #2b2b2b
+$orange-text: #f78f1e
+$simple-text: #41454a
+$card-color: #b1cbd9
+$card-dark-text: #648190
+
+.half-header
+    display: flex
+    align-items: center
+    &:last-child
+        justify-content: flex-end
+
+.logo-link
+    img
+        width: 320px
+        height: auto
+
+.socials
+    display: flex
+    .social
+        margin-left: 35px
+
+.navbar
+    margin-top: 95px
+
+.navlinks
+    display: flex
+    justify-content: space-between
+
+.nav-link
+    width: fit-content
+    color: $color-grey
+    text-transform: uppercase
+    text-align: center
+    padding: 0
+    font-size: 28px
+    font-weight: 500
+
+.col:first-child .nav-link
+    text-align: start
+
+.col:last-child .nav-link
+    text-align: end
+
+
+.recognize-container
+    display: flex
+    margin-top: 55px
+    justify-content: center
+    align-items: center
+    .recognize-text
+        color: $light-grey
+        margin: unset
+        margin-right: 25px
+        font-size: 24px
+
+.recognizing-field
+    width: 45%
+    outline: none
+    border: none 
+    position: relative
+    background-color: transparent
+    background-color: rgba(76, 80, 92, 0.2)
+    color: #fff
+    padding-left: 10px
+
+
+main
+    margin-top: 55px
+
+.user-part
+    display: flex
+    width: 100%
+    padding: 20px
+    background-color: $user-bg
+    img
+        width: 30%
+        height: fit-content
+
+.user-info
+    color: #fff
+    margin-left: 20px
+    h2
+        text-transform: uppercase
+        font-weight: 300
+    p
+        font-weight: 100
+
+.aside-unit
+    margin-top: 25px
+    padding: 20px
+    display: flex
+    justify-content: space-between
+    align-items: center
+    text-decoration: none
+    color: #fff
+    h3
+        font-weight: 300
+        font-size: 18px
+    img
+        height: 60px
+        width: auto
+
+
+.aside-unit:nth-child(2)
+    background-image: url('../img/sections/shopping.png')
+    background-repeat: no-repeat
+    background-size: cover
+
+.aside-unit:nth-child(3)
+    background-image: url('../img/sections/budget.png')
+    background-repeat: no-repeat
+    background-size: cover
+
+.aside-unit:nth-child(4)
+    background-image: url('../img/sections/badges.png')
+    background-repeat: no-repeat
+    background-size: cover
+
+.aside-unit:nth-child(5)
+    background-image: url('../img/sections/awards.png')
+    background-repeat: no-repeat
+    background-size: cover
+
+.aside-unit:nth-child(6)
+    background-image: url('../img/sections/quizzes.png')
+    background-repeat: no-repeat
+    background-size: cover
+
+.aside-unit:nth-child(7)
+    background-image: url('../img/sections/redeem.png')
+    background-repeat: no-repeat
+    background-size: cover
+    flex-direction: column
+    align-items: flex-start
+    input
+        width: 100%
+        border: 2px solid #fff
+        outline: none
+        background-color: rgba(255, 255, 255, 0.3)
+        color: #fff
+        padding-left: 10px
+
+
+
+.unit-info
+    text-align: end
+    h4
+        font-size: 32px
+        font-weight: 100
+        margin: unset
+    p
+        font-size: 18px
+        font-weight: 100
+        margin: unset
+
+.card-user-name
+    color: $color-grey
+    font-weight: 300
+    margin-bottom: 65px
+
+.input-text
+    color: $subtitles-color
+    font-size: 18px
+    margin-bottom: 25px
+
+.add-button
+    border: none
+    outline: none
+    background-color: transparent
+    color: $orange-text
+    padding: unset
+    font-size: 22px
+    font-weight: 300
+    margin-top: 25px
+    margin-bottom: 25px
+
+.criteria-text
+    color: $simple-text
+    font-size: 24px
+    font-weight: 300
+    margin-bottom: 30px
+    .orange-text
+        color: $orange-text
+
+.personal-messege
+    color: $subtitles-color
+    text-transform: uppercase
+    font-weight: 300
+    margin-top: 35px
+
+.messege-text
+    width: 100%
+    min-height: 150px
+    border: none
+    outline: none
+    background: #5e6a77
+    padding: 30px 35px
+    color: #fff
+    font-size: 22px
+    font-weight: 300
+    &::placeholder
+        color: #fff
+
+.card-preview
+    margin-top: 50px
+
+.select
+    display: flex
+    align-items: center
+    width: 300px
+    justify-content: space-between
+    margin-bottom: 15px
+    .select-name
+        margin: unset
+
+.subunit-title
+    color: $subtitles-color
+    text-transform: uppercase
+    font-weight: 300
+
+.has-multiple
+    width: 100%
+    border: 3px solid rgb(235, 235, 235)
+    background-color: rgba(255, 255, 255, 0.6)
+
+.has-multiple.nice-select:after
+    display: none
+
+.nice-select.open .list
+    width: 100%
+
+.multiple-options
+    .current
+        background-color: $light-grey
+        color: #fff
+        font-weight: 300
+        padding-top: 9px
+        padding-bottom: 6px
+        padding-left: 10px
+        padding-right: 10px
+        margin-right: 10px
+        .remove
+            margin-left: 20px
+
+.once-select
+    border: 3px solid #ebebeb
+    background-color: rgba(255, 255, 255, 0.6)
+    padding-left: 10px
+    position: relative
+    width: 220px
+    &::before
+        content: ''
+        display: block
+        width: 35px
+        height: 100%
+        background-color: #f3f4f5
+        top: 0px
+        right: 0px
+        position: absolute
+    &::after
+        right: 15px
+        background-color: #7d8089
+        clip-path: polygon(50% 50%, 100% 0, 100% 100%, 0% 100%)
+
+.slider-photos
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    .main-card
+        display: flex
+        width: 100%
+        height: 490px
+        margin-bottom: 50px
+        img
+            width: 60%
+            height: 490px
+        .text-area
+            height: 100%
+            width: 40%
+            background-color: $card-color
+
+
+.mini-cards
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+    align-items: stretch
+    height: 50%
+    .mini-card-photo
+        position: relative
+        margin-bottom: 20px
+        width: 100px
+        height: 100px
+        cursor: pointer
+        img
+            width: 100px
+            height: 100px
+
+.active-card.mini-card-photo::after
+    content: ''
+    display: block
+    position: absolute
+    top: 0
+    left: 0
+    width: 100px
+    height: 100px
+    border: 7px solid $card-color
+    transition: .5s
+
+.text-area
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    padding: 25px
+
+.select-title,
+.user-dark-text,
+.date-info,
+.about-text
+    font-weight: 300
+
+.select-title,
+.user-dark-text,
+.date-info
+    color: $card-dark-text
+
+.about-text
+    color: #fff
+
+.date-info
+    text-align: end
+
+.send-container
+    display: flex
+    justify-content: space-between
+    margin-top: 50px
+    .bottom-button
+        padding: 5px 20px 
+        background-color: $card-color
+        color: #fff
+        font-weight: 500
+        text-decoration: none
+        text-align: center
+    .send-to-button
+        margin-right: 30px
+    .email-input
+        border: 3px solid rgb(235, 235, 235)
+        background-color: rgba(255, 255, 255, 0.6)
+        width: 350px
+        outline: none
+        padding-left: 10px
+        color: $color-grey
+
+
+
+
+
+@import 'adapt'
